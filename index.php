@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,18 +25,31 @@
                 <div class="col-sm-6">
                     <br>
                     <h2 class="header-title">Login</h2>
-                    <form class="login-form">
+                    <form method= "POST" action = "model/login.php"  class="login-form">
                         <div class="form-group">
                             <label for="">Email:</label>
-                            <input type="text" name="nome" class="form-control" placeholder="Digite seu email">
+                            <input type="text" name="email" class="form-control" placeholder="Digite seu email">
                         </div>
                         <div class="form-group">
                             <label for="">Senha:</label>
                             <input type="Password" name="senha" class="form-control" placeholder="Digite sua senha">
                         </div>
                         <div>
-                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button type="submit" name="login" class="btn btn-primary">Enviar</button>
                         </div>
+<?php
+session_start();
+if (isset($_SESSION['alert']) AND $_SESSION['alert'] != "" && isset($_SESSION['msg']) AND $_SESSION['msg'] != "") {
+    ?>
+<div class="alert <?php echo $_SESSION['alert']; ?> alert-dismissible fade show" role="alert">
+<strong>Ola usuário!</strong><?php echo $_SESSION['msg'] ?>.
+<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<?php }
+unset($_SESSION['alert']);
+unset($_SESSION['msg']);
+?>
+
                     </form>
                 </div>
             </div>

@@ -3,7 +3,7 @@ function conexao(){
 $servidor = "localhost";
 $usuario = "root";
 $senha = "";
-$banco = "vendas";
+$banco = "git-banco";
 
 $conexao = mysqli_connect($servidor,$usuario,$senha,$banco);
 
