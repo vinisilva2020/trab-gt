@@ -30,7 +30,7 @@
     <h2 class="pb-2 border-bottom text-center">Cadastro de Produtos</h2>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-9">
     <div class="container shadow-lg">
-        <form class="needs-validation" novalidate>
+        <form action="#" method="POST" class="needs-validation" novalidate>
           <div class="row g-3">
             <div class="col-12">
               <label for="firstName" class="form-label">Nome do Produto:</label>
