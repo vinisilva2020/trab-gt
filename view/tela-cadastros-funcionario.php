@@ -18,56 +18,57 @@
   <div class="container">
       <div class="offcanvas-body">
         <ul class="navbar-nav flex-grow-1 justify-content-between">
-          <li class="nav-item"><a class="text-white nav-link" href="#">Cadastro de Funcionários</a></li>
-          <li class="nav-item"><a class="text-white nav-link" href="#">Cadastro de Produtos</a></li>
-          <li class="nav-item"><a class="text-white nav-link" href="#">Cadastro de Vendas</a></li>
+          <li class="nav-item"><a class="text-white nav-link" href="tela-cadastros-funcionario.php">Cadastro de Funcionários</a></li>
+          <li class="nav-item"><a class="text-white nav-link" href="tela-cadastros-produto.php">Cadastro de Produtos</a></li>
+          <li class="nav-item"><a class="text-white nav-link" href="tela-cadastros-venda.php">Cadastro de Vendas</a></li>
           </a></li>
         </ul>
       </div>
     </div>
 </nav>
 <div class="container px-2 py-5" id="featured-3">
-    <h2 class="pb-2 border-bottom text-center">Cadastro de Vendas</h2>
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-7">
+    <h2 class="pb-2 border-bottom text-center">Cadastro de Funcionários</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-9">
     <div class="container shadow-lg">
         <form action="#" method="POST" class="needs-validation" novalidate>
           <div class="row g-3">
             <div class="col-12">
-              <label for="firstName" class="form-label">Nome do Produto Vendido:</label>
-              <select class="form-control" name="" id="">
-                <option value="">Produto 1</option>
-                <option value="">Produto 2</option>
-                <option value="">Produto 3</option>
-              </select>
+              <label for="firstName" class="form-label">Nome do Funcionário:</label>
+              <input type="text" class="form-control" id="address" placeholder="Digite seu nome completo" required>
             </div>
 
             <div class="col-12">
-              <label for="address" class="form-label">Quantidade Vendida do Produto:</label>
-              <input type="text" class="form-control" id="address" placeholder="Digite a quantidade de produto" required>
+              <label for="address" class="form-label">Email do Funcionário:</label>
+              <input type="text" class="form-control" id="address" placeholder="Digite seu email" required>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Senha do Funcionário:</label>
+              <input type="text" class="form-control" id="address" placeholder="Digite sua senha" required>
             </div>
           <hr>
 
           <div class="text-center">
-          <button class="btn btn-primary btn-md" type="submit">Cadastrar Venda</button>
-          </div>
+          <button class="btn btn-primary btn-md" type="submit">Cadastrar Funcionário</button>
+      </div>
         </form>
 </div>
     </div>
     </div>
-    <h2 class="pb-2 border-bottom text-center">Listagem das Vendas</h2>
+    <h3 class="pb-2 border-bottom text-center">Listagem dos Funcionários</h3>
     <div class="bd-example-snippet bd-code-snippet shadow-lg"><div class="bd-example m-0 border-0">
-        <table class="table">
+    <table class="table">
           <thead>
           <tr>
-            <th scope="col">Nome do Produto Vendido</th>
-            <th scope="col">Quantidade Vendida do Produto</th>
+            <th scope="col">Nome do Funcionário</th>
+            <th scope="col">Email do Funcionário</th>
             <th scope="col">Opções</th>
           </tr>
           </thead>
           <tbody>
             <tr>
-                <td>Banana</td>
-                <td>5</td>
+                <td>Raissa Pedroso</td>
+                <td>raissa@gmail.com</td> 
                 <td><a title="Excluir" class="btn btn-sm btn-outline-danger" href=""><i class="bi bi-trash3"></i></a> 
                 <a title="Editar" class="btn btn-sm btn-outline-primary" href=""><i class="bi bi-pen"></i></a>
             </tr>

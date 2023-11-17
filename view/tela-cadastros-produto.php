@@ -46,14 +46,16 @@
               <label for="address" class="form-label">Valor do Produto:</label>
               <input type="text" class="form-control" id="address" placeholder="Digite o valor de produto" required>
             </div>
+          <hr>
 
-          <hr class="my-4">
-
+          <div class="text-center">
           <button class="btn btn-primary btn-md" type="submit">Cadastrar Produto</button>
+      </div>
         </form>
 </div>
     </div>
     </div>
+    <h3 class="pb-2 border-bottom text-center">Listagem dos Produtos</h3>
     <div class="bd-example-snippet bd-code-snippet shadow-lg"><div class="bd-example m-0 border-0">
     <table class="table">
           <thead>
